@@ -5,8 +5,8 @@
     <div class="containerCard">
         <div class="card">
             <img class="imgCard" src="{{ $comic->thumb }}" alt="#">
-            <p>{{ $comic->title }}</p>
-            <p>{{ $comic->series }}</p>
+            <p>Titulo:{{ $comic->title }}</p>
+            <p>Tipo di serie: {{ $comic->series }}</p>
             <p>{{ $comic->type }}</p>
         </div>
     </div>
