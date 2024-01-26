@@ -15,9 +15,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $dati = config("data");
-    return view('home', $dati);
-})->name("home");
+    $menuLinks = config("data.menuLinks");
+    $infoComic = config("data.infoComic");
+    return view('home', [
+        'menuLinks' => $menuLinks,
+        'infoComic' => $infoComic,
+
+        
+    ]);
+});
+
+
 
 Route::resource("comics", ComicController::class);
+
 

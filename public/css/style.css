@@ -4,37 +4,182 @@
     box-sizing: border-box;
   }
 
-/**Card**/
-
-.containerCard{
-    background-color: black;
+/*******************Header******************/
+nav{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
-    margin: 0 9rem 0 9rem;
-    padding: 4rem 0 0 0;
- 
-   
-    
-   
+    justify-content: space-around;
+    padding: 1rem;
 }
-.card {
+
+img{
+    width: 80px;
+    height: 80px;
+}
+
+.styleMenuLinks{
+    display: flex;
+    gap: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/**Jumbotron**/
+.sectionJumbotron {
     background-color: black;
-    color: white;
-    width: 15%;
-    padding: 0.5rem;
-    min-height: 400px;
+    text-align: center; 
+}
+
+
+.imgJumbotrom {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    object-position: top;
+    position: relative;
+
+}
+
+.bCurrent{
+    position: absolute;
+    top: 55%;
+    right: 74%;
+   
     
 }
 
-.imgCard {
-    width: 100%;
-    height: 200px;
+.btn{
+    background-color: #0082F9;
+    border-color:  #0082F9;
+    padding: 0.5rem;
+    color: white;
+    font-weight:bold;
+
 }
 
-.btn_loadM{
+/**SotoMenu**/
+
+.styleInfoMain {
+    background-color: #0082F9;
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: space-around;
+    padding: 1rem 12rem 1rem 12rem;
+    
+}
+
+.cardInfo {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.imgInfo {
+    width: 65px;
+    height: 65px;
+   
+}
+
+.infoText{
+    padding: 0.5rem;
+}
+
+
+/**************Footer***************************/
+.contenitoreFooter {
+    color: rgb(243, 238, 238);
+    width: 100%;
+    min-height: 300px;
+    background-image: url("/images/footer-bg.jpg");
+   
+}
+
+
+.contenuto {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    margin: 0 13rem 0 13rem;
+   
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit; /*Utilizza il colore ereditato dal contenitore */
+}
+
+a:hover {
+    color: #585ded;
+}
+
+ul li {
+    text-decoration: none;
+    list-style: none;
+    color: #bdb8b8;
+   
+}
+
+.lista{
+    padding-top: 0.5rem;
+}
+
+.imgDc{
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.pB1{
+    padding-bottom: 1rem;
+}
+
+
+/*****Style Section2 *******/
+.contenitoreIcone{
+    background-color: #303030;
+    padding: 0 10rem 0 10rem;
     display: flex;
     justify-content: center;
-    padding-block-end: 1rem;
+    justify-content: space-between;
+   
+   
+}
+
+.btnSign{
+    padding: 1rem;
+}
+
+button{
+    padding: 1rem;
+    border-color: #063d91;
+    cursor: pointer;
+    color: white;
+    background-color: #303030;
+    margin-left: 2rem;
+}
+
+button:hover{
+    background-color: #0082F9;
+}
+
+h5{
+    color: #1D64CC;
+    
+}
+.icone{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.iconeFooter{
+    width: 40px;
+    height: 40px;
 }
