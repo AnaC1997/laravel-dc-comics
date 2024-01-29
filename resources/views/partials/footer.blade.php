@@ -1,10 +1,12 @@
-<!--Section info-->
+
 <footer class="contenitoreFooter">
-    <div class="contenuto">
-        <span class="lista">
-            <h5>DC COMICS</h5>
+    <!--Section info-->
+    <div class="d-flex justify-content-between container">
+        <span class="lista mt-4 ">
+          
             <ul>
-                <li><a href="#">Charaters</a></li>
+                <h5 >DC COMICS</h5>
+                <li ><a href="#">Charaters</a></li>
                 <li><a href="#">Comics</a></li>
                 <li><a href="#">Movies</a></li>
                 <li><a href="#">TV</a></li>
@@ -14,16 +16,18 @@
 
             </ul>
 
-            <h5>SHOP</h5>
+            
             <ul>
+                <h5>SHOP</h5>
                 <li><a href="#">Shop DC</a></li>
                 <li><a href="#">Shop D Collectibles</a></li>
             </ul>
         </span>
 
-        <span class="lista">
-            <h5>DC</h5>
+        <span class="lista mt-4">
+           
             <ul>
+                <h5>DC</h5>
                 <li><a href="#">Terms Of Use</a></li>
                 <li><a href="#">Privacy policy (New)</a></li>
                 <li><a href="#">Add Choices</a></li>
@@ -38,9 +42,10 @@
             </ul>
         </span>
 
-        <span class="lista">
-            <h5>SITES</h5>
+        <span class="lista mt-4">
+           
             <ul>
+                <h5>SITES</h5>
                 <li><a href="#">DC</a></li>
                 <li><a href="#">MAD Magazine</a></li>
                 <li><a href="#">DC Kids</a></li>
@@ -59,17 +64,20 @@
 
 <!--Section icone social-->
 
-<section class="contenitoreIcone">
-    <span class="btnSign" >
-        <button>SIGN-UP NOW!</button>
-    </span>
-    <span class="icone">
-        <h5>FLOW US</h5>
-        <img class="iconeFooter" src="{{ asset('images/footer-facebook.png')}}" alt="#">
-        <img class="iconeFooter" src="{{ asset('images/footer-periscope.png')}}" alt="#">
-        <img class="iconeFooter" src="{{ asset('images/footer-pinterest.png')}}" alt="#">
-        <img class="iconeFooter" src="{{ asset('images/footer-twitter.png')}}" alt="#">
-        <img class="iconeFooter" src="{{ asset('images/footer-youtube.png')}}" alt="#">
-
-    </span>
+<section class="bg-black">
+    <div class="d-flex justify-content-between container p-4">
+        <span class="p-1" >
+            <button class="btn btn-primary">SIGN-UP NOW!</button>
+        </span>
+        <span class="icone">
+            <h5>FLOW US</h5>
+            <img class="iconeFooter" src="{{ asset('images/footer-facebook.png')}}" alt="#">
+            <img class="iconeFooter" src="{{ asset('images/footer-periscope.png')}}" alt="#">
+            <img class="iconeFooter" src="{{ asset('images/footer-pinterest.png')}}" alt="#">
+            <img class="iconeFooter" src="{{ asset('images/footer-twitter.png')}}" alt="#">
+            <img class="iconeFooter" src="{{ asset('images/footer-youtube.png')}}" alt="#">
+    
+        </span>
+    </div>
+    
 </footer>

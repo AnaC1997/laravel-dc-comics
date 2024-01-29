@@ -15,11 +15,15 @@
                             <p class="card-text"><strong>Data di vendita:</strong> {{ $card->sale_date }}</p>
                             <p class="card-text"><strong>Genere: </strong> {{ $card->type }}</p>
                             <span class="d-flex gap-2 ">
-                                <a href="" class="btn btn-primary ">Dettagli</a>
-                                <a href="" class="btn btn-warning ">Modifica</a>
-                                <form method="POST" class="d-inline-block">
+                                <a href="{{ route('comics.show', $card->id) }}" class="btn btn-primary ">Dettagli</a>
+                                <a href="{{ route('comics.edit', $card->id) }}"class="btn btn-warning ">Modifica</a>
+                                <form action="{{ route('comics.destroy', $card->id) }}" method="POST"
+                                    class="d-inline-block">
+                                    @csrf
+                                    @method('DELETE')
                                     <input type="submit" value="Cancella" class="btn btn-danger">
                                 </form>
+
                             </span>
                         </div>
                     </div>

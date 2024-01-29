@@ -1,19 +1,19 @@
 @extends('layouts.app')
-@include('partials.header')
 @section('content')
-<section class="sectionJumbotron">
-    <div>
-        <img class="imgJumbotrom" src="{{ asset('images/jumbotron.jpg')}}" alt="jumbotron">
-        <button class="bCurrent btn">CURRENT SERIES</button>
+ 
+    <!--Main-->
+    <main>
+        <section class="sectionJumbotron">
+            <div>
+                <img class="imgJumbotrom" src="{{ asset('images/jumbotron.jpg') }}" alt="jumbotron">
+                <button class="bCurrent btn btn-primary">CURRENT SERIES</button>
+                @include ('partials.card')
+                <span>
+                    <button class="btn btn-primary mb-4">LOAD MORE</button>
+                </span>
+            </div>
+        </section>
+        @include('partials.sotoMenu')
+    </main>
 
-        <p>CAMPO CARD</p>
-        <span class="btn_loadM">
-            <button class="btn">LOAD MORE</button>
-        </span>
-    </div>
-</section>
-@include('partials.sotoMenu')
-@include('partials.footer')
-
-
-
+@endsection
